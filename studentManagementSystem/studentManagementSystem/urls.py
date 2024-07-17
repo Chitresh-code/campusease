@@ -14,6 +14,10 @@ urlpatterns = [
     path('doLogin', views.doLogin, name='doLogin'),
     path('doLogout', views.doLogout, name='logout'),
 
+    # Profile Update
+    path('Profile', views.PROFILE, name='profile'),
+    path('Profile/update', views.PROFILE_UPDATE, name='profile_update'),
+
     # Hod Panel Path
     path('Hod/Home', Hod_views.HOME, name='hod_home'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
