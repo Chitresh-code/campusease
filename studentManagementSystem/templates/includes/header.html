@@ -92,9 +92,9 @@
       <li class="nav-item dropdown has-arrow">
          <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
             {% if user.profile_pic == "" %}
-               <span class="user-img"><img class="rounded-circle" src="{% static 'assets/img/base-profile.png' %}" width="31" alt="Ryan Taylor"></span>
+               <span class="user-img"><img class="rounded-circle" src="{% static 'assets/img/base-profile.png' %}" width="31" alt="User Profile"></span>
             {% else %}
-               <span class="user-img"><img class="rounded-circle" src="/{{ user.profile_pic }}" width="31" alt="Ryan Taylor"></span>
+               <span class="user-img"><img class="rounded-circle" src="/{{ user.profile_pic }}" width="31" alt="User Profile"></span>
             {% endif %}
          </a>
          <div class="dropdown-menu">
