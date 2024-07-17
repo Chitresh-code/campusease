@@ -17,6 +17,7 @@ urlpatterns = [
     # Profile Update
     path('Profile', views.PROFILE, name='profile'),
     path('Profile/update', views.PROFILE_UPDATE, name='profile_update'),
+    path('Profile/password_update', views.PASSWORD_UPDATE, name='password_update'),
 
     # Hod Panel Path
     path('Hod/Home', Hod_views.HOME, name='hod_home'),
